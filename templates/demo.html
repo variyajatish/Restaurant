@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputDesc</title>
+</head>
+<body>
+    
+
+    <form action="/add" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{inputvalues.id}}">
+        Icon <input type="text" name="icon" value="{{inputvalues.icon}}">
+        Heding <input type="text" name="heding" value="{{inputvalues.heding}}">
+        Desc <input type="text" name="desc" value="{{inputvalues.desc}}">
+        <button>Submit</button>
+    </form>
+    <br>
+    <form action="/about" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{inputvalues.id}}">
+        Number <input type="text" name="number" value="{{inputvalues.number}}">
+        Name <input type="text" name="name" value="{{inputvalues.name}}">
+        <button>Submit</button>
+    </form>
+    <br>
+    <form action="/view" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{inputvalues.id}}">
+        <!-- Itemimage <input type="text" name="itemimage" value="{{inputvalues.itemimage}}"> --> 
+        Itemimage <input type="file" name="itemimage">
+        Itemname <input type="text" name="itemname" value="{{inputvalues.itemname}}">
+        Itemabout <input type="text" name="itemabout" value="{{inputvalues.itemabout}}">
+        Itemprice <input type="text" name="itemprice" value="{{inputvalues.itemprice}}">
+        <button>Submit</button>
+    </form>
+    <br>
+    <form action="/data" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{inputvalues.id}}">
+        About <input type="text" name="about" value="{{inputvalues.about}}">
+        ChefName <input type="text" name="chefname" value="{{inputvalues.chefname}}">
+        Postion <input type="text" name="postion" value="{{inputvalues.postion}}">
+        ChefImage <input type="text" name="chefimage" value="{{inputvalues.chefimage}}">
+        <button>Submit</button>
+    </form>
+    <br>
+    <form action="/part" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{inputvalues.id}}">
+        PartyImg <input type="text" name="pryimg" value="{{inputvalues.pryimg}}">
+        partyName <input type="text" name="pryname" value="{{inputvalues.pryname}}">
+        PartyAmount <input type="text" name="pryamount" value="{{inputvalues.pryamount}}">
+        PartyAbout <input type="text" name="pryabout" value="{{inputvalues.pryabout}}">
+        <button>Submit</button>
+    </form>
+    <br>
+    <form action="/info" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{inputvalues.id}}">
+        ChefsImg <input type="text" name="chefimg" value="{{inputvalues.chefimg}}">
+        ChefsName <input type="text" name="chefsname" value="{{inputvalues.chefsname}}">
+        ChefsPostion <input type="text" name="chefpostion" value="{{inputvalues.chefpostion}}">
+        ChefsInfo <input type="text" name="chefinfo" value="{{inputvalues.chefinfo}}">
+        <button>Submit</button>
+    </form>
+    <br>
+    <form action="/gallery" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{inputvalues.id}}">
+        GalleryImg <input type="text" name="galleryimg" value="{{inputvalues.galleryimg}}">
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>
