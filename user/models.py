@@ -5,7 +5,7 @@ class User(models.Model):
     icon = models.CharField(max_length=10)
     heding = models.CharField(max_length=30)
     desc = models.CharField(max_length=200)
-
+     
 class Counts(models.Model):
     number = models.CharField(max_length=30)
     name = models.CharField(max_length=200)
