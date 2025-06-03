@@ -8,7 +8,7 @@ urlpatterns = [
     path('', Home),
     path('add', AddUser),
     path('about', About),
-    path('view', ViewUser),
+    path('view', ViewUser),                   
     path('data',ChefData),
     path('part',ChefPart),
     path('info',Chefsinfo),
