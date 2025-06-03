@@ -92,7 +92,7 @@ def ChefPart(request):
 
     return render(request, 'demo.html')  
 
-def Chefsinfo(request):
+def Chefsinfo(request):       
     print(request.GET)
     chefimg = request.POST.get('chefimg')
     chefsname = request.POST.get('chefsname')
